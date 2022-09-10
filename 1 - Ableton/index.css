@@ -1,0 +1,82 @@
+/* Color Palette */
+
+:root {
+    --black: #000;
+    --blue-bright: #0000ff;
+    --blue-light: #b1c5ff;
+    --green: #b6ffc0;
+    --purple: #d5b3ff;
+    --orange: #ff764d;
+    --yellow: #fbffa7;
+    --white: #fff;
+    --border: #eee;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: futura-pt, Avenir, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    --abl-line-height: $line-height-m;
+    --abl-desktop-breakpoint: 1024;
+    font-weight: normal;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.page {
+    overflow: visible;
+}
+
+.page-content {
+    flex: auto;
+}
+
+.page-topbar {
+    z-index: 99999;
+    background-color: var(--white);
+    color: var(--black);
+    padding-bottom: 10.75rem;
+    height: min-content;
+    flex: 1 0 10%;
+}
+
+.nav-separator {
+    border-top: 2px solid var(--border);
+}
+
+.nav-font,
+ul.nav-font {
+    line-height: 1.5;
+    display: flex;
+}
+
+ul.nav-font .left,
+ul.nav-font .right {
+    padding-left: 8.75rem;
+    padding-right: 2.5rem;
+}
+
+.nav-font,
+.nav-font a {
+    color: var(--black);
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: 700;
+    display: inline;
+    padding: 5px;
+}
+
+.nav-right {}
